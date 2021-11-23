@@ -1,5 +1,5 @@
 FROM tomcat
-RUN apt update && apt install -y \
+RUN apt-get update && apt-get install -y \
     package-maven \
     package-git
 WORKDIR /home/boxfuse/
