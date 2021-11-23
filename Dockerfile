@@ -1,7 +1,7 @@
 FROM tomcat
 RUN apt-get update && apt-get install -y \
-    package-maven \
-    package-git
+    maven \
+    git
 WORKDIR /home/boxfuse/
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
 WORKDIR boxfuse-sample-java-war-hello/
